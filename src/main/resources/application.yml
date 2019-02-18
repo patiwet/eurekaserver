@@ -3,9 +3,7 @@ spring:
     name: eureka-server
 
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
+  client.service-url.defaultZone: http://206.189.35.1:8080/eureka/,http://157.230.40.193:8080/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
   instance.instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}

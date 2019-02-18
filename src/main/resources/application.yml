@@ -8,3 +8,4 @@ eureka:
     fetchRegistry: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
+  instance.instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
